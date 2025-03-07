@@ -3,6 +3,7 @@ import Login from "./pages/Login/Login";
 import Signup from "./pages/Signup/Signup";
 import PrivateRoute from "./routes/PrivateRoute";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import ShopForm from "./pages/ShopForm/ShopForm";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { GeneralAction } from "./actions";
@@ -30,6 +31,14 @@ function App() {
           element={
             <PrivateRoute>
               <Dashboard />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/shopform"
+          element={
+            <PrivateRoute>
+              <ShopForm />
             </PrivateRoute>
           }
         />
