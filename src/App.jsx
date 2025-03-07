@@ -1,6 +1,15 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { GeneralAction } from "./actions";
 
 function App() {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(GeneralAction.appStart());
+  }, []);
+
   return (
     <BrowserRouter>
       <Routes>
