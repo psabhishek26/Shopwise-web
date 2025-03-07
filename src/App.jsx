@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Signup from "./pages/Signup/Signup";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { GeneralAction } from "./actions";
@@ -19,6 +20,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </BrowserRouter>
   );
