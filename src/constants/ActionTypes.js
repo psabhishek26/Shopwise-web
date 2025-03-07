@@ -3,3 +3,9 @@ export const generalActionTypes = {
   SET_TOKEN: "SET_TOKEN",
   SET_USER_DATA: "SET_USER_DATA",
 };
+
+export const shopActionTypes = {
+  GET_USER_SHOPS: "GET_USER_SHOPS",
+  SET_IS_LOADING: "SET_IS_LOADING",
+  SET_CURRENT_SHOP: "SET_CURRENT_SHOP",
+};

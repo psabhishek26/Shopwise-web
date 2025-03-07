@@ -1,3 +1,4 @@
 import GeneralAction from "./GeneralAction";
+import ShopAction from "./ShopAction";
 
-export { GeneralAction };
+export { GeneralAction, ShopAction };
